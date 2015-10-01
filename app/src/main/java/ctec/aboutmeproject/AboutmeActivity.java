@@ -4,13 +4,30 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.view.View;
 
-public class AboutmeActivity extends AppCompatActivity {
+
+public class AboutmeActivity extends AppCompatActivity
+{
+    private Button WritingButton;
+    private Button VideoGamesButton;
+    private Button WorkButton;
+    private Button SchoolButton;
+    private Button FriendsButton;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutme);
+
+        WritingButton = (Button) findViewById (R.id.WritingButton);
+        VideoGamesButton = (Button) findViewById (R.id.VideoGamesButton);
+        WorkButton = (Button) findViewById (R.id.WorkButton);
+        SchoolButton = (Button) findViewById (R.id.SchoolButton);
+        FriendsButton = (Button) findViewById (R.id.FriendsButton);
+
     }
 
     @Override
@@ -33,5 +50,13 @@ public class AboutmeActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+
     }
-}
+
+private void setupListeners() {
+    WritingButton.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View buttonView) {
+        }
+    });
+}}
