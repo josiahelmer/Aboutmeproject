@@ -4,17 +4,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 import android.widget.Button;
 import android.view.View;
+import android.content.Intent;
 
-
-public class AboutmeActivity extends AppCompatActivity
-{
+public class AboutmeActivity extends AppCompatActivity {
     private Button WritingButton;
     private Button VideoGamesButton;
     private Button WorkButton;
     private Button SchoolButton;
     private Button FriendsButton;
+    private RelativeLayout HomeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -22,12 +23,14 @@ public class AboutmeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutme);
 
-        WritingButton = (Button) findViewById (R.id.WritingButton);
-        VideoGamesButton = (Button) findViewById (R.id.VideoGamesButton);
-        WorkButton = (Button) findViewById (R.id.WorkButton);
-        SchoolButton = (Button) findViewById (R.id.SchoolButton);
-        FriendsButton = (Button) findViewById (R.id.FriendsButton);
+        WritingButton = (Button) findViewById(R.id.WritingButton);
+        VideoGamesButton = (Button) findViewById(R.id.VideoGamesButton);
+        WorkButton = (Button) findViewById(R.id.WorkButton);
+        SchoolButton = (Button) findViewById(R.id.SchoolButton);
+        FriendsButton = (Button) findViewById(R.id.FriendsButton);
+        HomeLayout = (RelativeLayout) findViewById(R.id.HomeLayout);
 
+        setupListeners();
     }
 
     @Override
@@ -53,10 +56,14 @@ public class AboutmeActivity extends AppCompatActivity
 
     }
 
-private void setupListeners() {
-    WritingButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View buttonView) {
-        }
-    });
-}}
+    private void setupListeners() {
+        WritingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), WritingActivity.class);
+                startActivityForResult(changeScreen, 0);
+            }
+        });
+    }
+}
