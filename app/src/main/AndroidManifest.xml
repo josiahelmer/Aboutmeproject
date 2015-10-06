@@ -20,6 +20,10 @@
             android:name=".WritingActivity"
             android:label="@string/title_activity_writing" >
         </activity>
+        <activity
+            android:name=".VideogameActivity"
+            android:label="@string/title_activity_videogame" >
+        </activity>
     </application>
 
 </manifest>

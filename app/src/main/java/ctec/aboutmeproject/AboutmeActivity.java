@@ -56,7 +56,8 @@ public class AboutmeActivity extends AppCompatActivity {
 
     }
 
-    private void setupListeners() {
+    private void setupListeners()
+    {
         WritingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View buttonView)
@@ -65,5 +66,15 @@ public class AboutmeActivity extends AppCompatActivity {
                 startActivityForResult(changeScreen, 0);
             }
         });
+    }
+    {
+        VideoGamesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), VideogameActivity.class);
+                startActivityForResult(changeScreen, 0);
+            }
+    });
     }
 }
