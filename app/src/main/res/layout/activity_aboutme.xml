@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Videogames"
-            android:id="@+id/VideoGamesButton"
+            android:id="@+id/videoGamesButton"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 

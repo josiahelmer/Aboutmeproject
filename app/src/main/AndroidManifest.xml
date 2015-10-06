@@ -24,6 +24,10 @@
             android:name=".VideogameActivity"
             android:label="@string/title_activity_videogame" >
         </activity>
+        <activity
+            android:name=".WorkActivity"
+            android:label="@string/title_activity_work" >
+        </activity>
     </application>
 
 </manifest>

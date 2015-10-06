@@ -24,7 +24,7 @@ public class AboutmeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_aboutme);
 
         WritingButton = (Button) findViewById(R.id.WritingButton);
-        VideoGamesButton = (Button) findViewById(R.id.VideoGamesButton);
+        VideoGamesButton = (Button) findViewById(R.id.videoGamesButton);
         WorkButton = (Button) findViewById(R.id.WorkButton);
         SchoolButton = (Button) findViewById(R.id.SchoolButton);
         FriendsButton = (Button) findViewById(R.id.FriendsButton);
@@ -58,7 +58,8 @@ public class AboutmeActivity extends AppCompatActivity {
 
     private void setupListeners()
     {
-        WritingButton.setOnClickListener(new View.OnClickListener() {
+        WritingButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View buttonView)
             {
@@ -66,15 +67,25 @@ public class AboutmeActivity extends AppCompatActivity {
                 startActivityForResult(changeScreen, 0);
             }
         });
-    }
-    {
-        VideoGamesButton.setOnClickListener(new View.OnClickListener() {
+
+
+        VideoGamesButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View buttonView)
             {
                 Intent changeScreen = new Intent(buttonView.getContext(), VideogameActivity.class);
                 startActivityForResult(changeScreen, 0);
             }
-    });
+        });
+        WorkButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), WorkActivity.class);
+                startActivityForResult(changeScreen, 0);
+            }
+        });
     }
 }

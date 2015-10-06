@@ -10,18 +10,18 @@ import android.view.View;
 import android.content.Intent;
 
 
-public class VideogameActivity extends AppCompatActivity
+public class WorkActivity extends AppCompatActivity
 {
     private Button HomeButton;
-    private RelativeLayout VideogameLayout;
+    private RelativeLayout WorkLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_videogame);
+        setContentView(R.layout.activity_work);
 
-        HomeButton = (Button) findViewById(R.id.HomeVideogameButton);
-        VideogameLayout = (RelativeLayout) findViewById(R.id.VideogameLayout);
+        HomeButton = (Button) findViewById(R.id.HomeWorkButton);
+        WorkLayout = (RelativeLayout) findViewById(R.id.WorkLayout);
 
         setupListeners();
     }
@@ -29,7 +29,7 @@ public class VideogameActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_videogame, menu);
+        getMenuInflater().inflate(R.menu.menu_work, menu);
         return true;
     }
 
@@ -52,7 +52,7 @@ public class VideogameActivity extends AppCompatActivity
     {
         HomeButton.setOnClickListener(new View.OnClickListener()
         {
-            public void onClick(View buttonView)
+        public void onClick(View buttonView)
             {
                 Intent returnIntent = new Intent();
                 setResult(RESULT_OK, returnIntent);
@@ -60,5 +60,4 @@ public class VideogameActivity extends AppCompatActivity
             }
         });
     }
-
 }
