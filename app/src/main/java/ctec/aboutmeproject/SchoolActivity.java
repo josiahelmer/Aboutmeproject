@@ -4,9 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.RelativeLayout
 
-public class SchoolActivity extends AppCompatActivity {
-
+public class SchoolActivity extends AppCompatActivity
+    {
+    private Button  HomeButton;
+    private RelativeLayout SchoolLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
