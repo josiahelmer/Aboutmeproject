@@ -14,4 +14,23 @@
         android:id="@+id/HomeWorkButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Work"
+        android:id="@+id/WorkText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="I work at Union middle school as a sweeper. It is not something I enjoy that much, but is only two hours a day though so it works nice with school. My coworkers at union are some of my best friends so they help make it more amusing."
+        android:id="@+id/WorkText2"
+        android:layout_below="@+id/WorkText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
 </RelativeLayout>

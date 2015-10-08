@@ -15,4 +15,23 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VideoGames"
+        android:id="@+id/VideogameText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Video games is where I spend a lot of my free time. In my opinion, video games are the ultimate form of entertainment. I enjoy it more than tv or movies because it is more immersive. I also enjoy how the wide range of video games available."
+        android:id="@+id/VideogameText2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/VideogameText"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

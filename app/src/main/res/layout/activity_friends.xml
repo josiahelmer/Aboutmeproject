@@ -14,4 +14,24 @@
         android:id="@+id/HomeFriendsButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Friends"
+        android:id="@+id/FriendsText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My group of friends is not the largest, but I like to think we are all very close to each other. We hang out all the time. We see movies, play videogames and just have fun."
+        android:id="@+id/FriendsText2"
+        android:layout_below="@+id/FriendsText"
+        android:layout_marginTop="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

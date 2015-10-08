@@ -14,4 +14,24 @@
         android:id="@+id/HomeSchoolButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="School"
+        android:id="@+id/SchoolText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="While it is not my favorite thing in the world, I work hard at school. I make sure that I will be able to have successful future. I am not the smartest student but I work hard enough to get good grades"
+        android:id="@+id/SchoolText2"
+        android:layout_below="@+id/SchoolText"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@+id/HomeSchoolButton"
+        android:layout_alignEnd="@+id/HomeSchoolButton" />
 </RelativeLayout>

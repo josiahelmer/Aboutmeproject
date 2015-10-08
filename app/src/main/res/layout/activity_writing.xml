@@ -29,8 +29,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
+        android:text="I enjoy writing sci-fi and fantasy . I find it&apos;s where I am most creative in life. It also relaxes me and causes me to think about things in different ways."
         android:id="@+id/textView2"
         android:layout_below="@+id/Writngtext"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp" />
 </RelativeLayout>
