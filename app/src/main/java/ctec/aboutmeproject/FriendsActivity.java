@@ -9,25 +9,24 @@ import android.widget.RelativeLayout;
 import android.view.View;
 import android.content.Intent;
 
-public class SchoolActivity extends AppCompatActivity
-    {
+public class FriendsActivity extends AppCompatActivity
+{
     private Button  HomeButton;
-    private RelativeLayout SchoolLayout;
+    private RelativeLayout FriendsLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_school);
+        setContentView(R.layout.activity_friends);
 
-        HomeButton = (Button) findViewById(R.id.HomeSchoolButton);
-        SchoolLayout = (RelativeLayout) findViewById(R.id.SchoolLayout);
+        HomeButton = (Button) findViewById(R.id.HomeFriendsButton);
+        FriendsLayout =  (RelativeLayout) findViewById(R.id.FriendsLayout);
 
-        setupListeners();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_school, menu);
+        getMenuInflater().inflate(R.menu.menu_friends, menu);
         return true;
     }
 
@@ -45,17 +44,17 @@ public class SchoolActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-
-      private void setupListeners()
-      {
-            HomeButton.setOnClickListener(new View.OnClickListener()
+    private void setupListeners()
+    {
+        HomeButton.setOnClickListener (new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
             {
-                public void onClick(View buttonView)
-                {
-                    Intent returnIntent = new Intent();
-                    setResult(RESULT_OK, returnIntent);
-                    finish();
-                }
-            });
-        }
+                Intent returnIntent = new Intent();
+                setResult(RESULT_OK, returnIntent);
+                finish();
+            }
+        });
+    }
 }
+

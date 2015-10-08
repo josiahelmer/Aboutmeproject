@@ -87,5 +87,23 @@ public class AboutmeActivity extends AppCompatActivity {
                 startActivityForResult(changeScreen, 0);
             }
         });
+        SchoolButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent (buttonView.getContext(), SchoolActivity.class);
+                startActivityForResult (changeScreen, 0);
+            }
+        });
+        FriendsButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent (buttonView.getContext(), FriendsActivity.class);
+                startActivityForResult (changeScreen, 0);
+            }
+        });
     }
 }
