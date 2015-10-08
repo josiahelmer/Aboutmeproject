@@ -38,8 +38,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/WritingImage"
-        android:src="@drawable/writing"
+        android:background="@drawable/writingp"
+        android:layout_above="@+id/HomeWritingButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
