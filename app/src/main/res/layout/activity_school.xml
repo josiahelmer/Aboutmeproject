@@ -31,7 +31,14 @@
         android:text="While it is not my favorite thing in the world, I work hard at school. I make sure that I will be able to have successful future. I am not the smartest student but I work hard enough to get good grades"
         android:id="@+id/SchoolText2"
         android:layout_below="@+id/SchoolText"
-        android:layout_marginTop="60dp"
-        android:layout_alignRight="@+id/HomeSchoolButton"
-        android:layout_alignEnd="@+id/HomeSchoolButton" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SchoolImage"
+        android:src="@drawable/student"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/SchoolText2" />
 </RelativeLayout>

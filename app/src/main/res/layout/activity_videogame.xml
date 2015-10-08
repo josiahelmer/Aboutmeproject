@@ -32,6 +32,16 @@
         android:id="@+id/VideogameText2"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/VideogameText"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/VideogameImage"
+        android:layout_alignEnd="@+id/VideogameImage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VideogameImage"
+        android:layout_below="@+id/VideogameText2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/Xbox"
+        android:layout_above="@+id/HomeVideogameButton" />
 
 </RelativeLayout>

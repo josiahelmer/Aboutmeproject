@@ -21,6 +21,8 @@ public class FriendsActivity extends AppCompatActivity
         HomeButton = (Button) findViewById(R.id.HomeFriendsButton);
         FriendsLayout =  (RelativeLayout) findViewById(R.id.FriendsLayout);
 
+        setupListeners();
+
     }
 
     @Override
@@ -44,17 +46,18 @@ public class FriendsActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-    private void setupListeners()
+
+      private void setupListeners()
     {
-        HomeButton.setOnClickListener (new View.OnClickListener()
-        {
-            public void onClick(View buttonView)
+            HomeButton.setOnClickListener (new View.OnClickListener()
             {
+                public void onClick(View buttonView)
+                {
                 Intent returnIntent = new Intent();
                 setResult(RESULT_OK, returnIntent);
                 finish();
-            }
-        });
+                }
+            });
     }
 }
 
