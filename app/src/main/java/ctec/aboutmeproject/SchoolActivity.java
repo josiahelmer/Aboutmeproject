@@ -8,11 +8,13 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.view.View;
 import android.content.Intent;
+import android.widget.ImageView;
 
 public class SchoolActivity extends AppCompatActivity
     {
     private Button  HomeButton;
     private RelativeLayout SchoolLayout;
+    private ImageView SchoolImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +22,7 @@ public class SchoolActivity extends AppCompatActivity
 
         HomeButton = (Button) findViewById(R.id.HomeSchoolButton);
         SchoolLayout = (RelativeLayout) findViewById(R.id.SchoolLayout);
+        SchoolImage = (ImageView) findViewById(R.id.SchoolImage);
 
         setupListeners();
     }
