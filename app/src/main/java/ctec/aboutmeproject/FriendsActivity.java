@@ -51,6 +51,8 @@ public class FriendsActivity extends AppCompatActivity
     }
 
       private void setupListeners()
+              //lets the button take you back to the home screen.
+
     {
             HomeButton.setOnClickListener (new View.OnClickListener()
             {

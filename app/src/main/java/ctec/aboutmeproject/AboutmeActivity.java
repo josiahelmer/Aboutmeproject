@@ -11,9 +11,11 @@ import android.content.Intent;
 
 
 /**
- * 
+ * @ Josiah Elmer
+ * Version 1.0
  */
-public class AboutmeActivity extends AppCompatActivity {
+public class AboutmeActivity extends AppCompatActivity
+{
     private Button WritingButton;
     private Button VideoGamesButton;
     private Button WorkButton;
@@ -61,6 +63,7 @@ public class AboutmeActivity extends AppCompatActivity {
     }
 
     private void setupListeners()
+            //Listeners for buttons. Allows them to switch to designated screens
     {
         WritingButton.setOnClickListener(new View.OnClickListener()
         {

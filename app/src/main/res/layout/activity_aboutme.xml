@@ -53,15 +53,6 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="School"
-            android:id="@+id/SchoolButton"
-            android:layout_alignTop="@+id/FriendsButton"
-            android:layout_toLeftOf="@+id/FriendsButton"
-            android:layout_toStartOf="@+id/FriendsButton" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Friends"
             android:id="@+id/FriendsButton"
             android:layout_below="@+id/Line1Layout"
@@ -79,5 +70,14 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School"
+        android:id="@+id/SchoolButton"
+        android:layout_below="@+id/Line1Layout"
+        android:layout_toLeftOf="@+id/Line2Layout"
+        android:layout_toStartOf="@+id/Line2Layout"/>
 
 </RelativeLayout>

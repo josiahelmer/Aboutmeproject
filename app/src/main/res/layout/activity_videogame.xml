@@ -13,7 +13,8 @@
         android:text="Home Screen"
         android:id="@+id/HomeVideogameButton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,19 +29,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Video games is where I spend a lot of my free time. In my opinion, video games are the ultimate form of entertainment. I enjoy it more than tv or movies because it is more immersive. I also enjoy how the wide range of video games available."
+        android:text="Video games is where I spend a lot of my free time. In my opinion, video games are the ultimate form of entertainment. I enjoy it more than tv or movies because it is more immersive. I also enjoy how the wide range of video games available. My favorite videogame is Fallout 3"
         android:id="@+id/VideogameText2"
         android:layout_below="@+id/VideogameText"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
+    <SeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/VideogameImage"
-        android:background="@drawable/xboxp"
-        android:layout_below="@+id/VideogameText2"
+        android:id="@+id/SoundSeekBar"
         android:layout_above="@+id/HomeVideogameButton"
-        android:layout_alignRight="@+id/VideogameText"
-        android:layout_alignEnd="@+id/VideogameText" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp"
+        android:layout_alignRight="@+id/HomeVideogameButton"
+        android:layout_alignEnd="@+id/HomeVideogameButton"
+        android:indeterminate="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/playbutton"
+        android:layout_above="@+id/SoundSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:id="@+id/pausebutton"
+        android:layout_alignTop="@+id/playbutton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stopbutton"
+        android:layout_above="@+id/SoundSeekBar"
+        android:layout_alignRight="@+id/SoundSeekBar"
+        android:layout_alignEnd="@+id/SoundSeekBar"/>
 
 </RelativeLayout>

@@ -50,6 +50,7 @@ public class SchoolActivity extends AppCompatActivity
     }
 
       private void setupListeners()
+              //Lets the button take you back to the homescreen.
       {
             HomeButton.setOnClickListener(new View.OnClickListener()
             {

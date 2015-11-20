@@ -49,6 +49,7 @@ public class WorkActivity extends AppCompatActivity
     }
 
     private void setupListeners()
+            //Lets the button take you back to the home screen.
     {
         HomeButton.setOnClickListener(new View.OnClickListener()
         {

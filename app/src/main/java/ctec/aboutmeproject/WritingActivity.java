@@ -9,6 +9,7 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.RelativeLayout;
 
+
 public class WritingActivity extends AppCompatActivity
 {
     private Button HomeButton;
@@ -47,6 +48,7 @@ public class WritingActivity extends AppCompatActivity
     }
 
     private void setupListeners()
+            //Lets the button take you back to the home screen.
     {
         HomeButton.setOnClickListener(new View.OnClickListener()
         {
