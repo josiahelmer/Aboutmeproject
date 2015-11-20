@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.view.View;
 import android.content.Intent;
 
+
+/**
+ * 
+ */
 public class AboutmeActivity extends AppCompatActivity {
     private Button WritingButton;
     private Button VideoGamesButton;
